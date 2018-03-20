@@ -1,0 +1,5 @@
+services:
+  customers:
+    url: "http://customersService:8001/customersService/api/v1"
+  orders:
+    url: "http://ordersService:8002/ordersService/api/v1"

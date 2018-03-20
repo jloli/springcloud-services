@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: "summary-service"
+  cloud:
+    config:
+      uri: http://configServer:9090
+      retry:
+        initial-interval: 2000
+        max-attempts: 5
+  profiles:
+    active: native
+
+server:
+  port: 8000
+  servlet:
+    contextPath: "/summaryService/api/v1"
+
+management:
+  endpoints:
+    web:
+      exposure:
+          include: "*"
