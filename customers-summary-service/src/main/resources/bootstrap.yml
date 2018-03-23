@@ -3,7 +3,7 @@ spring:
     name: "summary-service"
   cloud:
     config:
-      uri: http://configServer:9090
+      uri: http://configServer:9090/
       retry:
         initial-interval: 2000
         max-attempts: 5
